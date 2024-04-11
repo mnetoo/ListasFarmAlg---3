@@ -1,0 +1,28 @@
+program exe046;
+
+var
+
+    n, mediapond: real;
+    p, somaprodutos, somapesos: real;
+    
+begin
+
+    read(n, p);
+    somaprodutos:= 0;
+    somapesos:= 0;
+    
+        while (n <> 0) or (p <> 0) do
+        begin
+        
+            somaprodutos:= somaprodutos + (n * p);
+            somapesos:= somapesos + p;
+            read(n, p);
+        
+        end;
+        
+        mediapond:= somaprodutos / somapesos;
+        write(mediapond:0:2);
+    
+end.
+        
+    
