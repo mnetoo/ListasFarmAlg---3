@@ -1,0 +1,29 @@
+program exe048;
+
+var
+
+    a, b, produto: longint;
+    
+begin
+
+    read(a, b);
+    
+        if (a > 0) and (b > 0) and (a mod 2 = 1) and (b mod 2 = 1) and (a <= b) then
+        begin
+         
+            produto:= 1;
+                
+                while (a <= b) do
+                begin
+                    
+                    produto:= produto * a;
+                    a := a + 2;
+                    
+                end;
+                
+                write(produto);
+          
+        end;
+        
+end.
+        
