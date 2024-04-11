@@ -1,0 +1,25 @@
+program ex052;
+
+var 
+
+    n, m, i, soma: longint;
+    media: real;
+
+begin
+
+	read (m);
+	i:= 0;
+	soma:= 0;
+	
+	    while (i < m) do
+	    begin
+		    read (n);
+		    i:= i + 1;
+		    soma:= soma + n;
+		    
+	    end;
+	
+	media:= (soma / m);
+	writeln (media:0:2);
+
+end.
