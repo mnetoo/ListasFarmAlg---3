@@ -1,0 +1,26 @@
+program exe050;
+
+var
+
+    x, y, divisoes: longint;
+    
+begin
+
+    read(x, y);
+    divisoes:= 0;
+    
+        if (y > 0) and (x >= y) then begin
+        
+            while (x mod y = 0) do 
+            begin
+            
+                divisoes:= divisoes + 1;
+                x:= x div y;
+                
+            end;
+            
+        end;
+        
+    write(divisoes);
+    
+end.
