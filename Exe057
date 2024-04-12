@@ -1,0 +1,30 @@
+program exe057;
+
+var
+
+	numero, maior: longint;
+	
+begin
+
+	read(numero);
+	maior:= 0;
+	
+	
+		while (numero <> 0) do
+		begin
+		
+			if (numero mod 7 = 0) and (numero > maior) then
+				maior:= numero;
+				
+		read(numero);
+		
+		end;
+		
+		if (maior = 0) then
+			writeln('NENHUM')
+		else
+			write(maior);
+	
+end.
+		
+		
