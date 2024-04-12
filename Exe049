@@ -1,0 +1,47 @@
+program salpopulacao;
+
+var 
+	salario, salario1, salario2, salario3, salario4: real;
+	s, p1, p2, p3, p4: real;
+
+begin
+
+	read(salario);
+	salario1:= 0;
+	salario2:= 0;
+	salario3:= 0;
+	salario4:= 0;
+	
+		while (salario <> 0) do
+		begin
+		
+			if (salario <= 1350) then
+				salario1:= salario1 + 1
+				
+			else if (salario <= 4050) then
+				salario2:= salario2 + 1
+				
+			else if (salario <= 9000) then
+				salario3:= salario3 + 1
+				
+			else
+				salario4:= salario4 + 1;
+				
+		read(salario);
+		
+		end;
+		
+	s:= salario1 + salario2 + salario3 + salario4;
+ 	p1:= (salario1 * 100) / s;
+	p2:= (salario2 * 100) / s;
+	p3:= (salario3 * 100) / s;
+	p4:= (salario4 * 100) / s;
+	
+	writeln(p1:0:2);
+	writeln(p2:0:2);
+	writeln(p3:0:2);
+	writeln(p4:0:2);
+	
+	
+end.
+		
