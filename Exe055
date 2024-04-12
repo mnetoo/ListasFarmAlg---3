@@ -1,0 +1,33 @@
+program ex055;
+
+var 
+	cont, n, d, soma, at: longint;
+
+begin
+	
+	read (d, n);
+	soma:= 0;
+	at:= 0;
+	cont:= 1;
+		
+		while (n <> 0) do 
+		begin
+		
+			at := n mod 10;
+			n := n div 10;
+
+			if (d = at) then
+				soma:= soma + 1;
+		
+		
+		cont:= cont + 1;
+
+		end;
+    
+			if not (soma = 0) then
+				writeln (soma)
+			else
+				writeln ('NAO');
+
+end.
+    
