@@ -1,0 +1,33 @@
+program exe054;
+
+var
+
+	lados, a, cont, cont2: integer;
+	
+begin
+
+	read(lados);
+	cont:= 0;
+	a:= lados;
+	cont2:= 0;
+	
+		while (lados <> 0) do
+		begin
+		
+			if (lados = a) then
+				cont:= cont + 1;
+				
+			if (n <> a) then
+				cont2:= cont2 + 1;
+				
+			read(lados);
+			
+		end;
+		
+	if (cont >= 3) and (cont2 = 0) then
+		write('SIM');
+	else
+		write('NAO');
+		
+			
+end.
